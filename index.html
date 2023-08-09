@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Calculator app</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.google.com/specimen/League+Spartanss"
+    />
+    <link rel="stylesheet" href="./css/theme1.css" id="href" type="text/css" />
+  </head>
+  <body id="body">
+    <div class="container">
+      <div id="container-header" class="container-header">
+        <div id="title" class="title"><p>calc</p></div>
+        <div id="theme-main" class="theme">
+          <span id="theme-theme" class="theme-theme">THEME</span>
+          <div>
+            <div id="theme-num" class="theme-num">
+              <span id="theme1" onclick="setValueTheme1()">1</span>
+              <span id="theme2" onclick="setValueTheme2()">2</span>
+              <span id="theme3" onclick="setValueTheme3()">3</span>
+            </div>
+            <div id="theme-slide" class="theme-slide">
+              <input
+                min="0"
+                max="100"
+                type="range"
+                name="theme"
+                id="theme"
+                class="theme-value"
+                value="0"
+                onchange="changeThemeFunction()"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="space" class="space"></div>
+      <div id="container-screen" class="container-screen">
+        <div id="container-screen-data" class="container-screen-data">
+          <p data-previous-operand></p>
+          <p data-current-operand></p>
+        </div>
+      </div>
+      <div id="space" class="space"></div>
+      <div id="container-keyboard" class="container-keyboard">
+        <button
+          data-number
+          id="7"
+          value="7"
+          class="keyboard-num"
+          id="keyboard-num"
+        >
+          7
+        </button>
+        <button
+          data-number
+          id="8"
+          value="8"
+          class="keyboard-num"
+          id="keyboard-num"
+        >
+          8
+        </button>
+        <button
+          data-number
+          id="9"
+          value="9"
+          class="keyboard-num"
+          id="keyboard-num"
+        >
+          9
+        </button>
+        <button
+          data-delete
+          id="del"
+          value=""
+          class="keyboard-num"
+          id="keyboard-num"
+        >
+          DEL
+        </button>
+        <button
+          data-number
+          id="4"
+          value="4"
+          class="keyboard-num"
+          id="keyboard-num"
+        >
+          4
+        </button>
+        <button
+          data-number
+          id="5"
+          value="5"
+          class="keyboard-num"
+          id="keyboard-num"
+        >
+          5
+        </button>
+        <button
+          data-number
+          id="6"
+          value="6"
+          class="keyboard-num"
+          id="keyboard-num"
+        >
+          6
+        </button>
+        <button
+          data-operation
+          id="+"
+          value="+"
+          class="keyboard-num"
+          id="keyboard-num"
+        >
+          +
+        </button>
+        <button
+          data-number
+          id="1"
+          value="1"
+          class="keyboard-num"
+          id="keyboard-num"
+        >
+          1
+        </button>
+        <button
+          data-number
+          id="2"
+          value="2"
+          class="keyboard-num"
+          id="keyboard-num"
+        >
+          2
+        </button>
+        <button
+          data-number
+          id="3"
+          value="3"
+          class="keyboard-num"
+          id="keyboard-num"
+        >
+          3
+        </button>
+        <button
+          data-operation
+          id="-"
+          value="-"
+          class="keyboard-num"
+          id="keyboard-num"
+        >
+          -
+        </button>
+        <button
+          data-number
+          id="."
+          value="."
+          class="keyboard-num"
+          id="keyboard-num"
+        >
+          .
+        </button>
+        <button
+          data-number
+          id="0"
+          value="0"
+          class="keyboard-num"
+          id="keyboard-num"
+        >
+          0
+        </button>
+        <button
+          data-operation
+          id="/"
+          value="/"
+          class="keyboard-num"
+          id="keyboard-num"
+        >
+          /
+        </button>
+        <button
+          data-operation
+          id="*"
+          value="x"
+          class="keyboard-num"
+          id="keyboard-num"
+        >
+          x
+        </button>
+        <button
+          data-all-clear
+          id="clear"
+          value="clear"
+          class="keyboard-num"
+          id="keyboard-num"
+        >
+          RESET
+        </button>
+        <button data-equals id="=" value="=" class="keyboard-num">=</button>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://github.com/Quaniscoding" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Van Quan</a>.
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
